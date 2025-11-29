@@ -303,7 +303,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ### Youtube Demo
 
-[![Watch the video](https://img.youtube.com/vi/sYszXe5uUr0/maxresdefault.jpg)](https://www.youtube.com/watch?v=sYszXe5uUr0)
+[![Dental Chart Demo](./assets/chart.jpg)](https://www.youtube.com/watch?v=sYszXe5uUr0)
 
 _Interactive dental chart with treatment tracking and visualization_
 
