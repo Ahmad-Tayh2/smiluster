@@ -7,7 +7,7 @@
 
 A comprehensive dental practice management system designed to streamline clinic operations, patient management, appointments, billing, and more.
 
-## 🎥 Demo Video
+## Chart Management
 
 ![Dental Chart](./assets/chart.jpg)
 
