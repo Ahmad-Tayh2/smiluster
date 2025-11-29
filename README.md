@@ -9,7 +9,7 @@ A comprehensive dental practice management system designed to streamline clinic 
 
 ## 🎥 Demo Video
 
-https://github.com/yourusername/smiluster/assets/demo.mp4
+https://github.com/Ahmad-Tayh2/smiluster/assets/demo.mp4
 
 > **Note:** The video file `demo.mp4` is included in the repository. You can also [download it directly](./demo.mp4) to view locally.
 
@@ -120,16 +120,18 @@ Smiluster
    ```
 
 4. **Access the application**
+
    - Frontend: http://localhost
    - Backend API: http://localhost:3000
    - Database: localhost:3306
 
 5. **Login with default credentials**
+
    ```
    Email: admin@smiluster.com
    Password: smiluster
    ```
-   
+
    ⚠️ **Important:** Change the default password after first login for security!
 
 ### First Time Setup
@@ -245,13 +247,14 @@ Key environment variables (see `.env.example` for complete list):
 
 The system comes with a pre-configured admin account for initial setup:
 
-| Field    | Value                    |
-| -------- | ------------------------ |
-| Email    | `admin@smiluster.com`    |
-| Password | `smiluster`              |
-| Role     | Doctor (Admin)           |
+| Field    | Value                 |
+| -------- | --------------------- |
+| Email    | `admin@smiluster.com` |
+| Password | `smiluster`           |
+| Role     | Doctor (Admin)        |
 
-**🔒 Security Notice:** 
+**🔒 Security Notice:**
+
 - Change the default password immediately after first login
 - Update `TOKEN_SECRET_KEY` in production environments
 - Use strong passwords for all users
@@ -318,7 +321,7 @@ For support, email support@smiluster.com or create an issue in this repository.
 
 ![Dental Chart](./assets/chart.jpg)
 
-*Interactive dental chart with treatment tracking and visualization*
+_Interactive dental chart with treatment tracking and visualization_
 
 ---
 
