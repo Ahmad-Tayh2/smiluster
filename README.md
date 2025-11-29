@@ -9,9 +9,7 @@ A comprehensive dental practice management system designed to streamline clinic 
 
 ## 🎥 Demo Video
 
-https://github.com/Ahmad-Tayh2/smiluster/assets/demo.mp4
-
-> **Note:** The video file `demo.mp4` is included in the repository. You can also [download it directly](./demo.mp4) to view locally.
+![Dental Chart](./assets/chart.jpg)
 
 ## ✨ Features
 
@@ -293,7 +291,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 👥 Authors
 
-- **Your Name** - _Initial work_ - [YourGitHub](https://github.com/yourusername)
+- **Ahmad** - _Initial work_ - [YourGitHub](https://github.com/Ahmad-Tayh2)
 
 ## 🙏 Acknowledgments
 
@@ -301,25 +299,11 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - Dental professionals who provided valuable feedback
 - Open source community
 
-## 📞 Support
+## 📸 Demo
 
-For support, email support@smiluster.com or create an issue in this repository.
+### Youtube Demo
 
-## 🗺️ Roadmap
-
-- [ ] Mobile application (React Native)
-- [ ] SMS notifications
-- [ ] Advanced reporting & analytics
-- [ ] Multi-language support
-- [ ] Cloud backup integration
-- [ ] Telemedicine features
-- [ ] Integration with dental imaging systems
-
-## 📸 Screenshots
-
-### Dental Chart Management
-
-![Dental Chart](./assets/chart.jpg)
+![Dental Chart](https://www.youtube.com/watch?v=sYszXe5uUr0)
 
 _Interactive dental chart with treatment tracking and visualization_
 
