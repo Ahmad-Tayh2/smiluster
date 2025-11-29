@@ -1,0 +1,218 @@
+/* .table-template {
+  border: 1px solid var(--color-2);
+  height: calc(100vh - 210px);
+  overflow-y: scroll;
+  border-radius: 7px;
+} */
+.table-component {
+    border-collapse: collapse;
+    table-layout: fixed;
+    /* height: 100%; */
+    width: 100%;
+}
+
+.table-component thead {
+    position: sticky;
+    top: 0;
+    /* z-index: 10; */
+    border-top-right-radius: var(--main-rd);
+    border-top-left-radius: var(--main-rd);
+}
+
+.table-component tfoot {
+    position: sticky;
+    bottom: 0;
+}
+
+.table-component thead th,
+.table-component tbody td,
+.table-component tfoot td {
+    text-align: left;
+    padding: var(--pd-1);
+}
+
+.table-component tfoot tr td {
+    background-color: var(--color-2);
+    color: var(--color-1);
+}
+
+.table-component thead th {
+    background-color: var(--color-2);
+    color: var(--color-1);
+}
+
+.table-component thead th:first-child {
+    border-top-left-radius: var(--main-rd);
+    width: 50px;
+}
+
+.table-component thead th:last-child {
+    border-top-right-radius: var(--main-rd);
+    width: 50px;
+}
+
+.table-component tfoot td:first-child {
+    border-bottom-left-radius: var(--main-rd);
+}
+
+.table-component tfoot td:last-child {
+    border-bottom-right-radius: var(--main-rd);
+}
+
+.table-component tfoot div.pagination > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.table-component tfoot tr td div input {
+    min-width: 40px;
+    max-width: 50px;
+    border-radius: 3px;
+    padding: 3px;
+    margin-right: 10px;
+}
+
+.table-component tfoot .pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.table-component tfoot .pagination > div:first-child {
+    /* width: 75%; */
+    flex-grow: 1;
+    text-align: center;
+    margin-left: 15%;
+}
+
+.table-component tfoot .pagination > div:last-child {
+    /* width: 12%; */
+    min-width: 15%;
+    gap: 7px;
+    text-align: end;
+}
+
+.table-component tbody tr {
+    color: var(--color-1);
+    transition: var(--main-transition);
+}
+
+.table-component tbody tr:first-child {
+    background-color: var(--color-5);
+}
+
+.table-component tfoot .pagination .page-numbers-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.table-component tfoot .pagination .page-number-btn,
+.table-component tfoot .pagination .page-number-arrow,
+.table-component tfoot .pagination .page-number-dots {
+    height: 28px;
+    width: 28px;
+    padding: 0 7px;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.table-component tfoot .pagination .page-number-dots {
+    background-color: var(--color-3);
+}
+
+.table-component tfoot .pagination .page-number-btn {
+    background-color: var(--color-3);
+}
+
+.table-component tfoot .pagination .selected {
+    background-color: var(--color-1);
+    color: var(--color-3);
+}
+
+.table-component tfoot .pagination .page-number-arrow {
+    background-color: var(--color-3);
+}
+
+/* MyTable.css */
+.table-component tbody td .checkbox {
+    display: none;
+}
+
+.table-component tbody td .checkbox-label {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.table-component tbody .dropdown-cell-container button {
+    position: relative;
+}
+
+.table-component tbody .dropdown-cell-container button .dropdown-wrapper {
+    position: absolute;
+    right: 100%;
+    top:0;
+    /* top: calc(100% + 5px); */
+    /* top: 100%; */
+}
+
+.table-component tbody td .checkbox:checked + .checkbox-label {
+    background-color: var(--color-1);
+    border-color: var(--color-1);
+}
+
+.table-component tbody td:first-child,
+.table-component tbody td:last-child {
+    width: 60px;
+}
+
+.table-component tbody tr:not(:last-child) td {
+    border-bottom: 1px solid var(--color-2);
+}
+
+.table-component .options-list {
+    position: absolute;
+    top: calc(100% - 10px);
+    right: calc(100% - 25px);
+    width: fit-content;
+    z-index: 9;
+    background-color: white;
+    border-radius: 2px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    padding: 3px;
+}
+
+.table-component .options-list ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    white-space: nowrap;
+}
+
+.table-component .options-list ul li {
+    padding: 3px;
+    font-size: 12px;
+    border-radius: 2px;
+}
+
+.table-component .options-list ul li:hover {
+    background-color: var(--color-3);
+    cursor: pointer;
+}
+.table-component tbody tr:not(.loader, .no-data):hover {
+    background-color: var(--color-4) !important;
+}

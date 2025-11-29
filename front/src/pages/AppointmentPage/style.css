@@ -1,0 +1,71 @@
+.appointment-page-container {
+    display: flex;
+    gap: var(--main-gap);
+    flex-direction: column;
+    height: calc(100% - 20px);
+}
+
+.appointment-page-container > .content {
+    display: flex;
+    flex-direction: row;
+    gap: var(--main-gap);
+    align-items: flex-start;
+    width: 100%;
+    height: calc(100vh - 135px);
+}
+
+.content .app-info {
+    height: 100%;
+    width: 20%;
+    flex-direction: column;
+    gap: var(--main-gap);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: var(--pd-1);
+}
+
+.content .app-data {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: var(--main-gap);
+    height: 100%;
+}
+
+.appointment-page-container > .content .tabs {
+    display: flex;
+    gap: var(--main-gap);
+    height: auto;
+    padding: var(--pd-1);
+}
+.appointment-page-container > .content .tabs a {
+    padding: var(--pd-1);
+    border-radius: var(--main-rd);
+    transition: var(--main-transition);
+}
+.appointment-page-container > .content .tabs a:not(.active):hover {
+    background-color: var(--color-3);
+}
+.appointment-page-container > .content .tabs .active {
+    background-color: var(--color-1);
+    color: var(--color-3);
+}
+
+.appointment-page-container > .content .content-data {
+    overflow: hidden;
+    padding: var(--pd-1);
+    height: 100%;
+    width: 100%;
+}
+.patient-link {
+   
+    fill:none
+}
+
+.patient-link:hover {
+    cursor: pointer;
+    color: var(--color-1);
+    fill:white
+}

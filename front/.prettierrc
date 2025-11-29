@@ -1,0 +1,46 @@
+{
+    "printWidth": 80,
+    "tabWidth": 4,
+    "useTabs": false,
+    "parser": "babel-ts",
+    "singleQuote": false,
+    "overrides": [
+        {
+            "files": "*.js",
+            "options": {
+                "parser": "babel",
+                "plugins": [
+                    "prettier-eslint"
+                ],
+                "rules": {
+                    "prettier/prettier": [
+                        "error",
+                        {
+                            "requirePragma": false
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "files": [
+                "*.mts",
+                "*.cts",
+                "*.ts"
+            ],
+            "options": {
+                "parser": "babel-ts"
+            }
+        },
+        {
+            "files": [
+                "*.json",
+                "*.jsonc",
+                "*.json5"
+            ],
+            "options": {
+                "parser": "json5"
+            }
+        }
+    ]
+}

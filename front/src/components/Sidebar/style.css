@@ -1,0 +1,77 @@
+.sidebar {
+    background-color: var(--color-1);
+    height: 100vh;
+}
+.sidebar > .head {
+    display: flex;
+    height: 60px;
+    position: relative;
+}
+.sidebar > .head .arrow {
+    position: absolute;
+    right: 10px;
+    padding: 10px;
+    transition: var(--main-transition);
+}
+.sidebar > .head .logo {
+    color: white;
+    font-size: x-large;
+    font-weight: bold;
+    transition: var(--main-transition);
+}
+
+.sidebar .tabs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    width: 100%;
+}
+.sidebar .tabs a {
+    font-weight: 600;
+    border-radius: var(--main-rd);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    width: 100%;
+    overflow: hidden;
+    color: white;
+}
+.sidebar .tabs .active {
+    background-color: white;
+    color: var(--color-1);
+}
+.sidebar .tabs .active svg {
+    color: var(--color-1) !important;
+}
+.sidebar .tabs a:not(.active):hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    transition: var(--quick-transition);
+}
+.sidebar .tabs a .nav-box {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    padding: 10px;
+    width: 100%;
+}
+.sidebar .tabs svg {
+    width: 32px;
+    height: auto;
+}
+
+.element-to-hide {
+    opacity: 1;
+    visibility: visible;
+    font-size: small;
+    transition: opacity var(--main-transition),
+        visibility var(--main-transition);
+}
+
+.element-to-hide.hidden {
+    opacity: 0;
+    visibility: hidden;
+}

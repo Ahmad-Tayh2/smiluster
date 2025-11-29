@@ -1,0 +1,78 @@
+.add-service-tabs {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: var(--main-gap);
+    margin-bottom: var(--pd-2);
+}
+.add-service-tabs .tab {
+    padding: var(--pd-1);
+    color: var(--color-2);
+    border-radius: var(--main-rd) var(--main-rd) 0 0;
+    cursor: pointer;
+    /* border-bottom: 2px solid transparent; */
+    position:relative;
+
+    transition: var(--main-transition);
+}
+.add-service-tabs .tab::after {
+    content:"";
+    height: 2px; 
+    background-color: var(--color-2);
+    position:absolute;
+    width:0;
+    left: 50%;
+    bottom: 0;
+    transition: var(--main-transition);
+}
+.add-service-tabs .tab:not(.active-form):hover {
+    border-color: var(--color-2);
+    color: var(--color-2);
+    background-color: var(--color-4);
+}
+.add-service-tabs .tab:not(.active-form):hover ::after{
+    width:100%;
+    left:0;
+}
+.add-service-tabs .active-form {
+    border-color: var(--color-2);
+    color: var(--color-1);
+    background-color: var(--color-5);
+}
+.add-service-tabs .active-form::after {
+    width:100%;
+    left:0;
+}
+
+.service-form {
+    display: flex;
+     flex-direction: column;
+    /* padding-top: var(--pd-1); */
+    gap: var(--main-gap);
+}
+
+.service-form label {
+    color: var(--gray-2);
+    font-size: 14px;
+}
+.service-form input,
+.service-form textarea {
+    border: 1px solid transparent;
+    background-color: var(--gray-0);
+    padding: var(--pd-1);
+    border-radius: var(--main-rd);
+    width: 100%;
+    display: block;
+    transition: 0.2s ease-in-out;
+}
+.service-form p {
+    color: var(--color-1);
+    font-size: 12px;
+    font-weight: bold;
+}
+.service-form input:focus,
+.service-form textarea:focus {
+    border: 1px solid var(--gray-1);
+    background-color: white;
+}
+

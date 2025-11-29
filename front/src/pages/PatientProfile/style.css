@@ -1,0 +1,105 @@
+.patient-profile-page {
+    display: flex;
+    gap: var(--main-gap);
+    flex-direction: column;
+    height: calc(100vh - 100px);
+}
+.patient-profile-page > .content {
+    display: flex;
+    flex-direction: row;
+    gap: var(--main-gap);
+    align-items: flex-start;
+    width: 100%;
+    height: calc(100vh - 135px);
+}
+.patient-profile-page > .content .header-profile {
+    height: 100%;
+    width: 20%;
+    flex-direction: column;
+    gap: var(--main-gap);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: var(--pd-1);
+}
+.patient-profile-page > .content .header-profile .info-list {
+    height: 100%;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    gap: var(--main-gap);
+    width: 100%;
+}
+.patient-profile-page > .content .header-profile .name {
+    font-weight: 600;
+    font-size: 14px;
+}
+.patient-profile-page > .content .header-profile .photo {
+    width: 50px;
+}
+.patient-profile-page > .content .header-profile .photo img {
+    width: 100%;
+}
+.patient-profile-page > .content .header-profile .id {
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--gray-1);
+    background-color: var(--gray-0);
+    width: fit-content;
+    border-radius: 3px;
+    padding: 3px 6px;
+}
+
+.patient-profile-page > .content .profile-data {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: var(--main-gap);
+    height: 100%;
+}
+.patient-profile-page > .content .profile-data .tabs {
+    display: flex;
+    gap: var(--main-gap);
+    height: auto;
+    padding: var(--pd-1);
+}
+.patient-profile-page > .content .profile-data .tabs a {
+    padding: var(--pd-1);
+    border-radius: var(--main-rd);
+}
+.patient-profile-page > .content .profile-data .tabs a:not(.active):hover {
+    background-color: var(--color-3);
+}
+.patient-profile-page > .content .profile-data .tabs .active {
+    background-color: var(--color-1);
+    color: var(--color-3);
+}
+.patient-profile-page > .content .profile-data .content-data {
+    overflow: hidden;
+    padding: var(--pd-1);
+    height: 100%;
+}
+.patient-profile-page > .content .profile-data .content-data {
+    width: 100%;
+}
+
+.data-slice {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--s-gap);
+    background-color: var(--color-3);
+    padding: var(--pd-1);
+    width: 100%;
+    border-radius: var(--main-rd);
+    /* overflow: hidden; */
+    height: max-content;
+}
+.data-slice .data-name {
+    font-size: 14px;
+    color: var(--gray-3);
+}
+.data-slice .data-text {
+    font-size: 16px;
+}

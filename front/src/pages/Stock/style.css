@@ -1,0 +1,91 @@
+.stock-list-page {
+    display: flex;
+    flex-direction: column;
+    gap: var(--main-gap);
+    height: calc(100vh - 100px);
+}
+.stock-list-page > .head {
+    padding: var(--pd-1);
+    height: 62px;
+}
+
+.stock-list-page .stock-list {
+    max-height: 100%;
+    /* overflow-y: scroll; */
+    min-width: 800px;
+}
+
+.stock-list-page .stock-list {
+    height: 100%;
+    padding: var(--pd-1);
+}
+
+.stock-list-page .stock-list .filters {
+    height: 70px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: var(--main-rd);
+}
+.stock-list-page .stock-list .filters .search {
+    border: 1px solid var(--color-2);
+    border-radius: var(--main-rd);
+    z-index: 11;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    height:40px
+}
+.stock-list-page .stock-list .filters > div {
+    height: 57px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.stock-list-page .stock-list .filters > div label {
+    font-size: 12px;
+    font-weight: 500px;
+    color: gray;
+}
+.stock-list-page .stock-list .filters > div input {
+    height: 40px;
+    align-self: flex-end;
+    /* width: 100%; */
+}
+
+.stock-list-page .stock-list .filters input[type="date"] {
+    width: 140px;
+}
+.stock-list-page .stock-list .filters input[type="number"] {
+    width: 90px;
+}
+
+.stock-list-page .stock-list .filters > div:not(:first-child) input {
+    padding: var(--pd-1);
+    border: 1px solid var(--color-2);
+    border-radius: var(--main-rd);
+}
+.stock-list-page input[type="date"] {
+    width: 100%;
+}
+.stock-list-page input[type="number"] {
+    width: 100%;
+}
+.stock-list-page .stock-list .filters .search {
+    display: flex;
+}
+.stock-list-page .stock-list .filters .search label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: var(--pd-0);
+}
+.stock-list-page .stock-list .filters .search label svg {
+    display: block;
+}
+.stock-list-page .stock-list .list {
+    height: calc(100% - 70px);
+    overflow: auto;
+}

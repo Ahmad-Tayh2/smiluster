@@ -1,0 +1,48 @@
+.popup-card-container {
+    background-color: white;
+    border-radius: var(--main-rd);
+    /* overflow: hidden; */
+}
+
+.popup-card-container > .head {
+    padding: var(--pd-2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--main-gap);
+    background-color: var(--gray-0);
+    border-top-left-radius: var(--main-rd);
+    border-top-right-radius: var(--main-rd);
+}
+.popup-card-container .head .title {
+    color: var(--color-1);
+    font-size: large;
+    font-weight: bold;
+}
+.popup-card-container .head .close-icon {
+    color: var(--color-1);
+}
+
+.popup-card-container .content {
+    padding: var(--pd-2);
+    width: 500px;
+}
+
+.popup-card-container .foot {
+    background-color: var(--gray-0);
+    padding: var(--pd-2);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: var(--main-gap);
+    border-bottom-left-radius: var(--main-rd);
+    border-bottom-right-radius: var(--main-rd);
+}
+.popup-card-container .foot button {
+    padding: var(--pd-1) var(--pd-2);
+    border-radius: var(--main-rd);
+}
+.popup-card-container .foot .cancel-btn {
+    padding: var(--pd-1);
+    border-radius: var(--main-rd);
+}

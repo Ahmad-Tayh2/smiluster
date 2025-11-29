@@ -1,0 +1,72 @@
+.patient-profile-page .appointment-list {
+    height: calc(100% - 70px);
+    /* padding: var(--pd-1); */
+}
+
+.patient-profile-page .appointment-list .filters {
+    height: 70px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: var(--main-rd);
+}
+.patient-profile-page .appointment-list .filters > div {
+    height: 57px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.patient-profile-page .appointment-list .filters > div label {
+    font-size: 12px;
+    font-weight: 500px;
+    color: gray;
+}
+.patient-profile-page .appointment-list .filters > div input {
+    height: 40px;
+    align-self: flex-end;
+}
+.patient-profile-page .appointment-list .filters > div:not(:first-child) input {
+    padding: var(--pd-1);
+    border: 1px solid var(--color-2);
+    border-radius: var(--main-rd);
+}
+.patient-profile-page .appointment-list input[type="date"] {
+    width: 140px;
+}
+.patient-profile-page .appointment-list input[type="number"] {
+    width: 90px;
+}
+.patient-profile-page .appointment-list .filters .search {
+    border: 1px solid var(--color-2);
+    border-radius: var(--main-rd);
+    z-index: 11;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+.patient-profile-page .appointment-list .filters .search label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: var(--pd-0);
+}
+.patient-profile-page .appointment-list .filters .search label svg {
+    display: block;
+}
+.patient-profile-page .appointment-list .list {
+    /* height: calc(100% - 0px); */
+    height: 100%;
+    overflow: auto;
+}
+.patient-profile-page .patient-in-table {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: var(--main-gap);
+}
+.patient-profile-page .patient-in-table .image {
+    width: 35px;
+    height: 35px;
+    overflow: hidden;
+    border-radius: var(--main-rd);
+}

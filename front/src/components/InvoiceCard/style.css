@@ -1,0 +1,88 @@
+.invoice-card {
+    display: flex;
+    flex-direction: column;
+    max-height: 70vh;
+    overflow: auto;
+    justify-content: space-between;
+    gap:var(--main-gap)
+}
+
+.invoice-card .invoice-card-header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.invoice-ref-date-body {}
+
+.invoice-ref-date-body #invoice-ref {
+    font-size: 21px;
+}
+
+.invoice-ref-date-body #invoice-date {
+    font-size: 15px;
+    color: #7f8c8d;
+}
+
+.invoice-patient-status-body {
+    display: flex;
+    justify-content: center;
+    align-items: start; 
+    flex-direction: column;
+    gap:var(--main-gap);
+}
+
+.invoice-patient-status-body .patient-name {}
+
+.invoice-patient-status-body .patient-name h2 {
+    font-size: medium;
+}
+
+.invoice-patient-status-body #invoice-status {
+    font-size: 14px;
+    text-align: right;
+    color: #7f8c8d;
+}
+
+.invoice-card .invoice-card-content {
+    display: flex;
+    align-items: start;
+    width: 100%;
+    height: 100%;
+    margin: 10px 0;
+}
+
+.invoice-card-footer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.invoice-card-footer .total-calculation {}
+
+.total-calculation .amount-container {
+    display: flex;
+    justify-content: space-between;
+    width: 20vw;
+    padding: 5px 7px;
+}
+
+.amount-container .amount-label {
+    color: var(--color-1)
+}
+
+.amount-container .amount-value {}
+
+.amount-seperator {
+    background-color: var(--color-1);
+    height: 2px;
+    font-weight: 700;
+}
+
+.invoice-card-footer .invoice-footer-options {
+    display: flex;
+    width: 30vw;
+    justify-content: end;
+    align-items: center;
+    gap: 13px;
+}

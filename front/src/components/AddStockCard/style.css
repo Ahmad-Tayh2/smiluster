@@ -1,0 +1,50 @@
+.add-stock-form {
+}
+
+.add-stock-form label {
+    color: var(--gray-2);
+}
+.add-stock-form input,
+.add-stock-form textarea {
+    border: 1px solid transparent;
+    background-color: var(--gray-0);
+    padding: var(--pd-1);
+    border-radius: var(--main-rd);
+    width: 100%;
+    transition: 0.2s ease-in-out;
+}
+.add-stock-form input:focus,
+.add-stock-form textarea:focus {
+    border: 1px solid var(--gray-1);
+    background-color: white;
+}
+.add-stock-form textarea {
+    height: 80px;
+    resize: none;
+}
+
+.add-stock-form .add-stock-infos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--main-gap);
+}
+.add-stock-form .add-stock-infos .info-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: var(--main-gap);
+    margin-top: var(--pd-1);
+}
+.add-stock-form .add-stock-infos .info-item:last-child,
+.add-stock-form .add-stock-infos .info-item:first-child {
+    grid-column: span 2;
+}
+
+.product-container .delete-product-icon {
+    transition: var(--main-transition);
+    right: -40px;
+}
+.product-container:hover .delete-product-icon {
+    right: 0;
+}

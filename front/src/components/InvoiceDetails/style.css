@@ -1,0 +1,162 @@
+.invoice-details-container {
+    /* background-color: aquamarine; */
+    display: flex;
+    width: 100%;
+}
+.invoice-details-container table{
+    border-radius:5px ;
+    overflow: hidden;
+}
+.invoice-details-container table tr td {
+    padding:var(--pd-0)
+}
+
+
+/* Invoice Appointment*/
+.invoice-appointment-details-container{
+    background-color: var(--color-1);
+    border-radius: 5px !important;
+}
+.invoice-appointment-details-container .appointment-description{
+    padding: 4px;
+    padding-left: 5px;
+    border-radius: 5px !important;
+
+}
+.invoice-appointment-details-container .appointment-cost{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 24%;
+    margin-left: 45%;
+    text-align: center;
+    padding: 4px;
+    padding-left: 5px;
+
+}
+.invoice-appointment-details-container .appointment-paid{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin-right: 24%;
+    margin-left: 45%;
+    text-align: center;
+    padding: 4px;
+    padding-left: 5px;
+}
+/*  Tooth Acts*/
+.invoice-appointment-toothAct-container{
+    background-color: var(--color-4);
+}
+.invoice-appointment-toothAct-container .appointment-toothAct-description{
+    display: flex;
+    width:100%;
+    text-align: left ;
+    padding: 4px;
+    margin-left: 60px;
+
+
+}
+.invoice-appointment-toothAct-container .appointment-toothAct-cost{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 24%;
+    margin-left: 45%;
+    text-align: center;
+    padding: 4px;
+    padding-left: 5px;
+}
+.appointment-toothAct-cost .toothAct-cost{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 24%;
+    margin-left: 45%;
+    text-align: center;
+
+}
+.invoice-appointment-toothAct-container .appointment-toothAct-payment{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 24%;
+    margin-left: 45%;
+    text-align: center;
+    padding: 4px;
+    padding-left: 5px;
+}
+
+    /*  Service */
+.invoice-appointment-service-container{
+    background-color: var(--color-4);
+}
+.invoice-appointment-service-container .appointment-service-description{
+    display: flex;
+    width: 100%;
+    text-align: left;
+    padding: 4px;
+    margin-left: 60px;
+
+}
+.invoice-appointment-service-container .appointment-service-cost{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 24%;
+    margin-left: 45%;
+    text-align: center;
+    padding: 4px;
+    padding-left: 5px;
+}
+.appointment-service-cost .service-cost{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 24%;
+    margin-left: 45%;
+    text-align: center;
+
+}
+
+.invoice-appointment-service-container .appointment-service-payment{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 24%;
+    margin-left: 45%;
+    text-align: center;
+    padding: 4px;
+    padding-left: 5px;
+}
+
+/* Invoice Payment */
+.invoice-payment-container{
+    background-color: var(--color-2);
+}
+
+.invoice-payment-container .payment-description{
+    padding: 4px;
+    padding-left: 5px;
+}
+.invoice-payment-container .payment-cost{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 24%;
+    margin-left: 45%;
+    text-align: center;
+    padding: 4px;
+    padding-left: 5px;
+
+}
+.invoice-payment-container .payment-paid{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin-right: 24%;
+    margin-left: 45%;
+    padding: 4px;
+    padding-left: 5px;
+}

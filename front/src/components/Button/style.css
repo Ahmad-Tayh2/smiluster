@@ -1,0 +1,16 @@
+.button-component {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 8px 15px;
+    background-color: var(--color-1);
+    color: white;
+    font-size: 12px;
+    border-radius: var(--main-rd);
+}
+.button-component > span {
+    font-size: inherit;
+    color: inherit;
+    font-weight: inherit;
+}

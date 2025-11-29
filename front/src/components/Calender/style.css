@@ -1,0 +1,230 @@
+/* Styling for the calendar scheduler */
+.appointment-page .week-calender {
+    /* height: calc(100% - 200px); */
+    height: 100%;
+    overflow-y: auto;
+    min-width: 800px;
+    width: 100%;
+}
+.appointment-page .week-calender .calender-grid-table {
+    border-collapse: collapse;
+    background-color: var(--color-3);
+    width: 100%;
+    height: 100%;
+    border-radius: var(--main-rd);
+    table-layout: fixed;
+}
+.appointment-page .week-calender .calender-grid-table thead {
+    background-color: white;
+    height: 40px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.1); /* Add your desired shadow values */
+}
+.appointment-page .week-calender .calender-grid-table thead .day {
+    font-size: 14px;
+    font-weight: 00;
+}
+.appointment-page .week-calender .calender-grid-table thead .single-day-header {
+    /* text-align: left; */
+    padding-left: 20px;
+    color: var(--color-1);
+}
+.appointment-page .week-calender .calender-grid-table thead .day span {
+    font-size: 12px;
+    margin-left: 5px;
+}
+.appointment-page .week-calender .calender-grid-table tbody {
+    /* overflow: scroll; */
+    position: relative;
+}
+
+.appointment-page .week-calender .calender-grid-table tr td:not(:first-child) {
+    border-bottom: 1px solid var(--color-1);
+    /* background-color: green; */
+}
+.appointment-page
+    .week-calender
+    .calender-grid-table
+    tbody
+    tr
+    td:not(:last-child, :first-child) {
+    border-right: 1px solid var(--color-1);
+}
+.appointment-page .week-calender .rendez-vous-layer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.appointment-page .week-calender .calender-grid-table thead tr th {
+    border-bottom: 1px solid var(--color-1);
+}
+
+.appointment-page
+    .week-calender
+    .calender-grid-table
+    thead
+    tr
+    th:not(:last-child) {
+    border-right: 1px solid var(--color-1);
+}
+
+.appointment-page .week-calender .calender-grid-table .times {
+    font-size: small;
+    position: relative;
+}
+.appointment-page .week-calender .calender-grid-table .times span {
+    position: absolute;
+    bottom: -17px;
+    padding: 10px;
+    font-weight: bold;
+    background-color: white;
+    z-index: 1;
+}
+
+.appointment-page
+    .week-calender
+    .calender-grid-table
+    tr
+    td:first-child:not(.rendez-vous-layer),
+.appointment-page
+    .week-calender
+    .calender-grid-table
+    tr
+    td:nth-child(2):not(.rendez-vous-layer) {
+    background-color: white;
+}
+
+.appointment-page .week-calender .calender-grid-table thead tr th:first-child {
+    width: 70px;
+}
+
+/* .appointment-page
+    .week-calender
+    .calender-grid-table
+    tbody
+    tr:not(:last-child) {
+    height: 80px;
+} */
+.appointment-page .week-calender .calender-grid-table tbody tr:last-child {
+    height: 0;
+}
+.appointment-page .week-calender .calender-grid-table tbody tr .lines {
+    width: 5px;
+}
+.appointment-page .week-calender .calender-grid-table tbody .rendez-wrapper {
+    position: absolute;
+    border-radius: var(--main-rd);
+    overflow: hidden;
+    width: calc(calc(calc(100% - 70px) / 7) - 4px);
+    background-color: white;
+}
+
+.appointment-page
+    .week-calender
+    .calender-grid-table
+    tbody
+    .rendez-wrapper
+    .rendez {
+    border: 2px ridge;
+    border-radius: var(--main-rd);
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+
+}
+.appointment-page .week-calender .rendez .details-rendez {
+    visibility: hidden;
+    opacity: 0;
+    transition: var(--main-transition);
+    cursor: pointer;
+}
+.appointment-page .week-calender .rendez:hover .details-rendez {
+    visibility: visible;
+    opacity: 1;
+}
+/* 
+.appointment-page .appointment-list {
+    height: calc(100% - 100px);
+   overflow-y: scroll; 
+    min-width: 800px;
+    width: 100%;
+} 
+*/
+
+.appointment-page .appointment-list {
+    height: calc(100% - 100px);
+    padding: var(--pd-1);
+}
+
+.appointment-page .appointment-list .filters {
+    height: 70px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: var(--main-rd);
+}
+.appointment-page .appointment-list .filters > div {
+    height: 57px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.appointment-page .appointment-list .filters > div label {
+    font-size: 12px;
+    font-weight: 500px;
+    color: gray;
+}
+.appointment-page .appointment-list .filters > div input {
+    height: 40px;
+    align-self: flex-end;
+}
+.appointment-page .appointment-list .filters > div:not(:first-child) input {
+    padding: var(--pd-1);
+    border: 1px solid var(--color-2);
+    border-radius: var(--main-rd);
+}
+/* .appointment-page .appointment-list input[type="date"] {
+    width: 140px;
+} */
+/* .appointment-page .appointment-list input[type="number"] {
+    width: 90px;
+} */
+.appointment-page .appointment-list .filters .search {
+    border: 1px solid var(--color-2);
+    border-radius: var(--main-rd);
+    z-index: 11;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+.appointment-page .appointment-list .filters .search label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: var(--pd-0);
+}
+.appointment-page .appointment-list .filters .search label svg {
+    display: block;
+}
+.appointment-page .appointment-list .list {
+    height: calc(100% - 70px);
+    overflow: auto;
+}
+.appointment-page .patient-in-table {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: var(--main-gap);
+}
+.appointment-page .patient-in-table .image {
+    width: 35px;
+    height: 35px;
+    overflow: hidden;
+    border-radius: var(--main-rd);
+}

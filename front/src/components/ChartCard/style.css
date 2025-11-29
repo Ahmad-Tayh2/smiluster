@@ -1,0 +1,64 @@
+.chart-popup {
+    display: flex;
+    flex-direction: column;
+    gap: var(--main-gap);
+}
+.chart-popup .add-act-btn {
+    padding: 8px;
+    width: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--main-gap);
+    background-color: var(--color-3);
+    color: var(--color-1);
+    border-radius: var(--main-rd);
+}
+.chart-popup .tooth-act-input {
+    display: flex;
+    gap: var(--main-gap);
+    flex-direction: column;
+}
+.chart-popup .tooth-act-input > div {
+    /* height: 57px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+/* .chart-popup .tooth-act-input > div > label {
+    font-size: 12px;
+    font-weight: 500px;
+    color: gray;
+} */
+
+.chart-popup .tooth-act-input .act-select {
+    width: calc(100% - 0px);
+}
+.chart-popup .tooth-act-input .rdv {
+    width: calc(50% - 20px);
+}
+.chart-popup input,
+.chart-popup textarea {
+    border: 1px solid transparent;
+    background-color: var(--gray-0);
+    padding: var(--pd-1);
+    border-radius: var(--main-rd);
+    width: 100%;
+    display: block;
+    transition: 0.2s ease-in-out;
+}
+.chart-popup .input label {
+    color: var(--gray-2);
+    font-size: 14px;
+}
+.chart-popup .input{
+    display: flex;
+    flex-direction: column;
+    gap:var(--s-gap);
+    width:100%
+}
+.chart-popup input:focus,
+.chart-popup textarea:focus {
+    border: 1px solid var(--gray-1);
+    background-color: white;
+}

@@ -1,0 +1,12 @@
+.admin-profile-page {
+}
+.admin-profile-page .photo-container {
+}
+.admin-profile-page .photo-container .add-photo-stripe {
+    bottom: -70px;
+    transition: var(--main-transition);
+}
+
+.admin-profile-page .photo-container:hover .add-photo-stripe {
+    bottom: 0;
+}

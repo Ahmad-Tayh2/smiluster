@@ -1,0 +1,108 @@
+.appointment-page .appointment-list {
+    height: calc(100% - 0px) !important;
+    padding: var(--pd-1);
+    min-width: 900px;
+}
+
+/* .appointment-page .appointment-list .upper-table {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    background-color: red;
+    flex-wrap: wrap;
+} */
+.appointment-page  .views-btn {
+    display: flex;
+    overflow: hidden;
+}
+
+.appointment-page  .views-btn button svg {
+    display: block;
+}
+.appointment-page  .period-views-btn {
+    display: flex;
+    overflow: hidden;
+}
+.appointment-page  .period-views-btn button{
+    padding: var(--pd-1);
+    font-size: small;
+    font-weight: bold;
+    color: #01497e;
+}
+
+.appointment-page  .period-views-btn button svg {
+    display: block;
+}
+.appointment-page > .head {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--pd-1);
+    height: 62px;
+}
+.calender-switcher .left-arrow,
+.calender-switcher .right-arrow {
+    color: var(--color-2);
+    transition: var(--main-transition);
+}
+.calender-switcher .left-arrow:hover,
+.calender-switcher .right-arrow:hover {
+    color: var(--color-1);
+}
+.appointment-page .appointment-list .filters {
+    min-height: 70px;
+    height: fit-content;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: var(--main-rd);
+    flex-wrap: wrap;
+}
+.appointment-page .appointment-list .filters > div {
+    height: 57px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.appointment-page .appointment-list .filters > div label {
+    font-size: 12px;
+    font-weight: 500px;
+    color: gray;
+}
+.appointment-page .appointment-list .filters > div input {
+    height: 40px;
+    align-self: flex-end;
+}
+.appointment-page .appointment-list .filters > div:not(:first-child) input {
+    padding: var(--pd-1);
+    border: 1px solid var(--color-2);
+    border-radius: var(--main-rd);
+}
+.appointment-page .appointment-list .filters input[type="date"] {
+    width: 140px;
+}
+.appointment-page .appointment-list .filters input[type="number"] {
+    width: 90px;
+}
+.appointment-page .appointment-list .filters .search {
+    border: 1px solid var(--color-2);
+    border-radius: var(--main-rd);
+    z-index: 11;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+.appointment-page .appointment-list .filters .search label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: var(--pd-0);
+}
+.appointment-page .appointment-list .filters .search label svg {
+    display: block;
+}
+.appointment-page .appointment-list .list {
+    height: calc(100% - 70px);
+    overflow: auto !important;
+}

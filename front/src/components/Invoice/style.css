@@ -1,0 +1,96 @@
+.invoice-appointment-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: var(--main-gap);
+}
+
+.invoice-appointment-container > p {
+    color: var(--gray-1);
+    font-size: 16px;
+    font-weight: 500;
+}
+.invoice .input {
+    height: 57px;
+    /* width: calc(50% - 5px); */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.invoice .input label {
+    font-size: 12px;
+    font-weight: 500px;
+    color: gray;
+}
+.invoice .input input {
+    height: 40px;
+    padding: var(--pd-1);
+    border: 1px solid var(--color-2);
+    border-radius: var(--main-rd);
+}
+
+.checkbox-label {
+}
+.checkbox-label input {
+    display: none;
+}
+.checkbox-label input + div {
+    background-color: rgb(255, 255, 255);
+}
+.checkbox-label input:checked + div {
+    background-color: var(--color-1);
+}
+.invoicing-table-parent{
+    border-radius: var(--main-rd);
+
+}
+.invoicing-acts-table {
+    border-collapse: collapse;
+    table-layout: fixed;
+ 
+
+ }
+ .invoicing-acts-table td, .invoicing-acts-table th{
+    border-right: 1px solid var(--color-3);
+    border-bottom: 1px solid var(--color-3);
+
+ }
+ .invoicing-acts-table td > div,  .invoicing-acts-table th > div{
+    padding:var(--pd-1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:3px;
+ }
+.invoicing-acts-table    input,
+.invoicing-acts-table textarea {
+    border: 1px solid transparent;
+    background-color: var(--gray-0);
+    padding: var(--pd-0);
+    border-radius: var(--main-rd);
+    transition: 0.2s ease-in-out;
+    text-align: center;
+    width:60px
+}
+.invoicing-acts-table input:focus,
+.invoicing-acts-table textarea:focus {
+    border: 1px solid   var(--gray-1);
+    background-color: white
+    
+}
+.add-service-btn{
+    background-color:  rgb(70, 180, 95);
+    color:white;
+    /* border: 2px solid var(--color-2); */
+    padding: 4px 6px;
+    gap: 5px;
+    border-radius: var(--main-rd);
+    /* margin-left: auto; */
+    transition: var(--main-transition);
+}
+
+/* .add-service-btn:hover{
+    background-color: white;
+    color: var(--color-2);
+} */
+

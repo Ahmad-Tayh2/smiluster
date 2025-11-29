@@ -1,0 +1,41 @@
+.add-patient-form {
+}
+
+.add-patient-form label {
+    color: var(--gray-2);
+}
+.add-patient-form input,
+.add-patient-form textarea {
+    border: 1px solid transparent;
+    background-color: var(--gray-0);
+    padding: var(--pd-1);
+    border-radius: var(--main-rd);
+    width: 100%;
+    transition: 0.2s ease-in-out;
+}
+.add-patient-form input:focus,
+.add-patient-form textarea:focus {
+    border: 1px solid var(--gray-1);
+    background-color: white;
+}
+.add-patient-form textarea {
+    height: 80px;
+    resize: none;
+}
+
+.add-patient-form .add-patient-infos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--main-gap);
+}
+.add-patient-form .add-patient-infos .info-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: var(--main-gap);
+    margin-top: var(--pd-1);
+}
+.add-patient-form .add-patient-infos .info-item:last-child {
+    grid-column: span 2;
+}

@@ -1,0 +1,40 @@
+.add-payment-card-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.add-payment-card-container .payment-card-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.add-payment-card-container .payment-card-header .fact-ref {
+    font-size: 18px;
+}
+.add-payment-card-container .payment-card-header .fact-patient {
+    font-size: 14px;
+}
+.add-payment-card-container .payment-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 25px;
+}
+
+.add-payment-card-container .payment-info .payment-card-subheader {
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+}
+
+.add-payment-card-container .payment-card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 25px;
+    margin-top: 25px;
+    padding: 7px;
+    border: 1px solid #bcbcbc;
+    border-radius: 4px;
+}

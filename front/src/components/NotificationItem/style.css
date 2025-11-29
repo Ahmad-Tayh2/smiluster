@@ -1,0 +1,48 @@
+.notif-item {
+    padding: var(--pd-2);
+    border-radius: var(--main-rd);
+    background-color: rgb(244, 244, 244);
+    /* background-color: var(--color-4); */
+    font-size: 18px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: var(--main-gap);
+    height: 100px;
+}
+.notif-item .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.notif-item .icon .icon-wrapper {
+    padding: var(--pd-0);
+    border-radius: var(--main-rd);
+    background-color: var(--color-2);
+}
+.notif-item .content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: var(--s-gap);
+}
+.notif-item .content .title {
+    font-weight: bold;
+    color: var(--color-1);
+}
+.notif-item .content .description {
+}
+.notif-item .content .time {
+    font-weight: bold;
+    color: var(--color-1);
+}
+.notif-item .options {
+    height: 100%;
+    margin-left: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}

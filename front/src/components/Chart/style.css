@@ -1,0 +1,99 @@
+.chart-container {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    gap: var(--main-gap);
+    height: 100%;
+    overflow: auto;
+    /* background-color: red; */
+}
+.chart-container .teeth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: var(--gap-2);
+    /* background-color: var(--color-3); */
+    padding: var(--pd-2);
+    max-height: 67%;
+    border-radius: var(--main-rd);
+}
+.chart-container .teeth-container > div:last-child .tooth-wrapper img {
+    transform: rotate(180deg);
+}
+
+.chart-container .tooth-wrapper {
+    height: 190px;
+    /* background-color: red; */
+    cursor: pointer;
+    border-radius: var(--main-rd);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* transition: var(--main-transition);
+     */
+     transition: 0.2s ease;
+}
+.chart-container  .lower-teeth .tooth-wrapper{
+    /* justify-content: flex-start; */
+
+}
+.tooth-number{
+    font-weight: bold;
+    font-size: medium !important;
+}
+.chart-container .teeth-container > div:first-child .tooth-wrapper {
+  
+    /* padding-bottom: 10px; */
+}
+.chart-container .teeth-container > div:last-child .tooth-wrapper {
+    /* padding-top: 10px; */
+}
+.chart-container .tooth-wrapper > div {
+    text-align: center;
+    height: 10%;
+    color: var(--color-1);
+    font-size: large;
+}
+.chart-container .tooth-wrapper img {
+    max-height: 70%;
+    width: auto;
+}
+.chart-container .tooth-wrapper:hover {
+    background-color: var(--color-4);
+}
+.chart-container .checkout-btn{
+    background-color:  var(--warning-color);
+    color:white;
+    border: 2px solid var(--warning-color);
+    padding: 4px 8px;
+    gap: 5px;
+    border-radius: var(--main-rd);
+    margin-right: 10px;
+    margin-left: auto;
+
+    font-size: large;
+    animation: grow 0.8s linear infinite;
+
+}
+.chart-container .checkout-btn svg{
+    background-color:transparent;
+    animation: moving-arrow 0.5s linear infinite;
+}
+.chart-container .checkout-btn:hover{
+    /* background-color: white;
+    color: var(--warning-color); */
+
+}
+
+@keyframes  moving-arrow {
+    100% {
+        transform: translateX(5px);
+    }
+}
+@keyframes  grow {
+    100% {
+        scale: 1.03;
+    }
+}

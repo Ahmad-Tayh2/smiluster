@@ -1,0 +1,87 @@
+.file {
+    padding: var(--pd-1);
+    border-radius: var(--main-rd);
+    border: 1px solid #c9c9c9;
+    gap: var(--main-gap);
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+.filled {
+    background-color: #fff9c6;
+}
+.empty:hover {
+    background-color: var(--color-3);
+}
+.file .icon svg {
+    display: block;
+}
+.file .empty-content {
+    flex-direction: column;
+    width: 60%;
+    gap: var(--s-gap);
+}
+.file .empty-content .empty-title {
+    font-size: 22px;
+    font-weight: 500;
+    text-align: center;
+    color: var(--color-1);
+}
+.file .empty-content .empty-description {
+    font-size: 13px;
+    font-weight: 400;
+    text-align: center;
+    color: var(--color-1);
+}
+
+.file .box {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    transition: var(--main-transition);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    gap: var(--gap-3);
+    padding: var(--pd-2);
+}
+.file .box:hover {
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.file .box:hover .file-title {
+    color: white;
+    background-color: transparent;
+}
+.file .box:hover .file-actions {
+    opacity: 1;
+}
+.file .box .file-title {
+    color: var(--color-3);
+    font-size: 24px;
+    font-weight: 700;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: var(--pd-1);
+    border-radius: var(--main-rd);
+    transition: var(--main-transition);
+}
+.file .box .file-actions {
+    display: flex;
+    gap: var(--main-gap);
+    opacity: 0;
+    transition: var(--main-transition);
+}
+.file .box .file-actions .icon {
+    background-color: white;
+    padding: var(--pd-0);
+    border-radius: var(--main-rd);
+}
+.file .box .file-actions .icon svg {
+    height: 32px;
+    width: 32px;
+}

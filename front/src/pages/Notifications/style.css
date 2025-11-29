@@ -1,0 +1,22 @@
+.notifications-page {
+    display: flex;
+    flex-direction: column;
+    gap: var(--main-gap);
+    height: calc(100vh - 100px);
+    overflow: hidden;
+}
+.notifications-page .notifications-list {
+    padding: var(--pd-2);
+    display: flex;
+    flex-direction: column;
+    gap: var(--main-gap);
+    max-height: 100%;
+}
+.notifications-page .notifications-list .items {
+    padding: var(--pd-0);
+    max-height: 100%;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    gap: var(--main-gap);
+}

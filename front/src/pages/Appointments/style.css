@@ -1,0 +1,62 @@
+.appointment-page {
+    height: calc(100vh - 100px);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: var(--main-gap);
+}
+.appointment-page .top {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.appointment-page .head .calender-switcher {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+}
+
+.appointment-page .head .calender-switcher button {
+    padding: var(--pd-0);
+    border-radius: var(--main-rd);
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.appointment-page .head .calender-switcher button:hover {
+    background-color: var(--color-3);
+}
+.appointment-page .head .calender-switcher .calender-btn {
+    font-size: medium;
+    width: 200px;
+    position: relative;
+}
+
+.appointment-page .head .calender-views-tabs {
+    border-radius: var(--main-rd);
+    overflow: hidden;
+    border: 1px solid var(--color-2);
+    margin-right: 5px;
+    display: flex;
+    min-width: 95px;
+}
+.appointment-page .head .calender-views-tabs button {
+    height: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 12px;
+    color: var(--color-1);
+    background-color: white;
+}
+.appointment-page .head .calender-views-tabs .week-tab {
+    color: white;
+}
+.appointment-page .head .calender-views-tabs .active-tab {
+    border-right: 1px solid var(--color-2);
+    color: white;
+    background-color: var(--color-1);
+}
