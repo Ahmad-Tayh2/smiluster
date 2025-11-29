@@ -7,41 +7,51 @@
 
 A comprehensive dental practice management system designed to streamline clinic operations, patient management, appointments, billing, and more.
 
-![Smiluster Dashboard](https://via.placeholder.com/800x400/4A90E2/FFFFFF?text=Smiluster+Dashboard+Demo)
+## 🎥 Demo Video
+
+https://github.com/yourusername/smiluster/assets/demo.mp4
+
+> **Note:** The video file `demo.mp4` is included in the repository. You can also [download it directly](./demo.mp4) to view locally.
 
 ## ✨ Features
 
 ### 👥 Patient Management
+
 - Complete patient records with medical history
 - Document uploads and management
 - Patient search and filtering
 - Dental chart visualization
 
 ### 📅 Appointment Scheduling
+
 - Interactive calendar view
 - Appointment status tracking
 - Automated reminders
 - Conflict detection
 
 ### 💊 Treatment & Services
+
 - Dental act catalog
 - Tooth-specific treatment tracking
 - Service management
 - Treatment history
 
 ### 💰 Billing & Payments
+
 - Invoice generation
 - Payment tracking
 - Multiple payment methods
 - Financial reports
 
 ### 📊 Inventory Management
+
 - Product catalog
 - Stock tracking
 - Low stock alerts
 - Supplier management
 
 ### 👨‍⚕️ User & License Management
+
 - Role-based access control
 - Multi-user support
 - License management
@@ -59,6 +69,7 @@ Smiluster
 ### Tech Stack
 
 #### Backend
+
 - **Runtime:** Node.js 18
 - **Framework:** Express.js
 - **Language:** TypeScript
@@ -68,6 +79,7 @@ Smiluster
 - **File Upload:** Multer
 
 #### Frontend
+
 - **Framework:** React 18
 - **Language:** TypeScript
 - **Build Tool:** Vite
@@ -87,12 +99,14 @@ Smiluster
 ### Installation
 
 1. **Clone the repository**
+
    ```bash
    git clone https://github.com/yourusername/smiluster.git
    cd smiluster
    ```
 
 2. **Configure environment variables**
+
    ```bash
    cp .env.example .env
    # Edit .env with your configuration
@@ -100,6 +114,7 @@ Smiluster
    ```
 
 3. **Start the application with Docker**
+
    ```bash
    docker-compose up -d
    ```
@@ -109,13 +124,25 @@ Smiluster
    - Backend API: http://localhost:3000
    - Database: localhost:3306
 
+5. **Login with default credentials**
+   ```
+   Email: admin@smiluster.com
+   Password: smiluster
+   ```
+   
+   ⚠️ **Important:** Change the default password after first login for security!
+
 ### First Time Setup
 
 After starting the containers:
 
 1. Wait for all services to be healthy (check with `docker-compose ps`)
-2. The database will be automatically initialized
-3. Access the frontend and create your first admin user
+2. The database will be automatically initialized with a default admin user
+3. Access the frontend at http://localhost
+4. Login with the default credentials:
+   - **Email:** `admin@smiluster.com`
+   - **Password:** `smiluster`
+5. **Change your password immediately** in the profile settings
 
 ## 🐳 Docker Commands
 
@@ -205,14 +232,30 @@ smiluster/
 
 Key environment variables (see `.env.example` for complete list):
 
-| Variable | Description | Default |
-|----------|-------------|---------|
-| `DATABASE_NAME` | Database name | `smiluster` |
-| `DATABASE_USERNAME` | Database user | `smiluster_user` |
-| `DATABASE_PASSWORD` | Database password | `smiluster_pass` |
-| `TOKEN_SECRET_KEY` | JWT secret key | (must be changed) |
-| `API_PORT` | Backend port | `3000` |
-| `FRONTEND_PORT` | Frontend port | `80` |
+| Variable            | Description       | Default           |
+| ------------------- | ----------------- | ----------------- |
+| `DATABASE_NAME`     | Database name     | `smiluster`       |
+| `DATABASE_USERNAME` | Database user     | `smiluster_user`  |
+| `DATABASE_PASSWORD` | Database password | `smiluster_pass`  |
+| `TOKEN_SECRET_KEY`  | JWT secret key    | (must be changed) |
+| `API_PORT`          | Backend port      | `3000`            |
+| `FRONTEND_PORT`     | Frontend port     | `80`              |
+
+### Default Credentials
+
+The system comes with a pre-configured admin account for initial setup:
+
+| Field    | Value                    |
+| -------- | ------------------------ |
+| Email    | `admin@smiluster.com`    |
+| Password | `smiluster`              |
+| Role     | Doctor (Admin)           |
+
+**🔒 Security Notice:** 
+- Change the default password immediately after first login
+- Update `TOKEN_SECRET_KEY` in production environments
+- Use strong passwords for all users
+- Enable HTTPS in production deployments
 
 ## 📊 Database Schema
 
@@ -241,23 +284,13 @@ The application uses the following main entities:
 - SQL injection prevention via ORM
 - XSS protection headers
 
-## 🤝 Contributing
-
-Contributions are welcome! Please follow these steps:
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
 ## 📝 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## 👥 Authors
 
-- **Your Name** - *Initial work* - [YourGitHub](https://github.com/yourusername)
+- **Your Name** - _Initial work_ - [YourGitHub](https://github.com/yourusername)
 
 ## 🙏 Acknowledgments
 
@@ -281,17 +314,11 @@ For support, email support@smiluster.com or create an issue in this repository.
 
 ## 📸 Screenshots
 
-### Dashboard
-![Dashboard](https://via.placeholder.com/800x400/4A90E2/FFFFFF?text=Dashboard+View)
+### Dental Chart Management
 
-### Patient Management
-![Patients](https://via.placeholder.com/800x400/50C878/FFFFFF?text=Patient+Management)
+![Dental Chart](./assets/chart.jpg)
 
-### Appointment Calendar
-![Calendar](https://via.placeholder.com/800x400/FF6B6B/FFFFFF?text=Appointment+Calendar)
-
-### Billing
-![Billing](https://via.placeholder.com/800x400/FFD93D/000000?text=Billing+System)
+*Interactive dental chart with treatment tracking and visualization*
 
 ---
 
